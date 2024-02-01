@@ -1,25 +1,21 @@
-//method overriding 
-class ram{
-    void show(){
-        System.out.println("hello");
-        }
-    // void show1(){
-    //     System .out.println("ravi");
-    // }    
-}
-class raman extends ram{
-    void show(){
-        super.show();
-        System.out.println("hi");
+abstract class base{
+    base(){
+       System.out.println("the base class constructor is called");
+       
     }
-    
-    // void show1()
-     
-     
+    abstract void fun(); 
+}
+class derived extends base{
+    derived(){
+        System.out.println("the derived class is called");
+    }
+    void fun(){
+        System.out.println("hello how are you");
+    }
 }
 class pro2{
     public static void main(String args[]){
-        ram obj=new raman();
-         obj.show();
+        derived obj=new derived();
+        obj.fun();
     }
 }

@@ -1,22 +1,15 @@
-//program to sum the nmber (method overloading by changing the parameter)
-class sum{
-    public int sum(int x, int y){
-        return(x+y);
+class rahul{
+    int a;
+    void raman(int a){
+        this.a=a;{
+            System.out.println("the vlue of a is:");
+            System.out.println(a);
+        }
     }
-    public int sum(int x,int y,int z){
-        return(x+y+z);
-    }
-    public double sum(double x,double y){
-        return(x+y);
-    }
- 
 }
 class pro1{
     public static void main(String args[]){
-        sum A=new sum();
-       System.out.println(A.sum(25,45)) ;
-       System.out.println(A.sum(25,45,75)) ;
-       System.out.println(A.sum(25.47,45.4)) ;
-      
+        rahul obj=new rahul();
+        obj.raman(20);
     }
 }
